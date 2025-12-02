@@ -17,6 +17,7 @@ class _OnboardingState extends State<Onboarding> {
         children: [
           const SizedBox(height: 120.0),
           Image.asset('assets/images/onboard.png'),
+          const SizedBox(height: 26),
           Expanded(
             child: Container(
               margin: const EdgeInsets.only(left: 13, right: 13, bottom: 26),
@@ -50,18 +51,24 @@ class _OnboardingState extends State<Onboarding> {
                   const SizedBox(height: 40),
                   Container(
                     margin: const EdgeInsets.only(left: 50, right: 50),
-                    height: 68,
-                    decoration: BoxDecoration(
-                        color: const Color.fromRGBO(238, 95, 80, 1),
-                        borderRadius: BorderRadius.circular(60)),
-                    width: MediaQuery.of(context).size.width,
-                    child: const Center(
-                      child: Text(
-                        'Bắt Đầu',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 28),
+                    child: Material(
+                      elevation: 4,
+                      borderRadius: BorderRadius.circular(60),
+                      child: Container(
+                        height: 68,
+                        decoration: BoxDecoration(
+                            color: const Color.fromRGBO(238, 95, 80, 1),
+                            borderRadius: BorderRadius.circular(60)),
+                        width: MediaQuery.of(context).size.width,
+                        child: const Center(
+                          child: Text(
+                            'Bắt Đầu',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 28),
+                          ),
+                        ),
                       ),
                     ),
                   )

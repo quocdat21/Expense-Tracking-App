@@ -1,3 +1,4 @@
+import 'package:expense_tracking_app/pages/home.dart';
 import 'package:expense_tracking_app/pages/onboarding.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Onboarding(),
+      // home: const Onboarding(),
+      home: const Home(),
     );
   }
 }
